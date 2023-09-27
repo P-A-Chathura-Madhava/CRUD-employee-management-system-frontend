@@ -1,0 +1,24 @@
+<h2> Student List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> Name </th>
+            <th> Address </th> 
+            <th> Contact </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees" >
+            <td> {{ employee.id }} </td>
+            <td> {{ employee.name }} </td>
+            <td> {{ employee.address }} </td>
+            <td> {{ employee.contact }} </td>
+            <td>
+                <button class = "btn btn-info"> Update</button>
+                <button class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
